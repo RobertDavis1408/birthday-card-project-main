@@ -1,0 +1,169 @@
+body {
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    background: linear-gradient(#a2d2ff, whitesmoke);
+    color: #ffffff;
+}
+
+@font-face{
+  font-family: bdayfont;
+  src: url("KRBirthdayLetters.ttf"); 
+}
+#ian{
+    font-family: bdayfont;
+    text-shadow: 0 0 1px black;
+    color: blue;
+}
+
+h1, h2, h3, h4, p {
+    text-shadow: 0 0 1px black;
+    color: red;
+}
+
+#bff-img {
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid blue;
+    margin-bottom: 10px;
+}
+
+#bday-age {
+    background: #337ca0;
+    padding: 5px 15px;
+    border-radius: 25px;
+    margin: 5px 0 10px 0;
+    color:white;
+    border: solid 5px blue;
+}
+
+#bday-date {
+    margin: 0;
+    background: #337ca0;
+    padding: 5px 15px;
+    border-radius: 25px;
+    color:white;
+     border: solid 5px blue;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift-section {
+    margin-top: 50px;
+}
+
+.gift-title {
+    margin-bottom: 10px;
+    
+}
+
+.gift-hint {
+    margin-top: 0;
+}
+
+#gift-img-cheers {
+    height: 200px;
+}
+
+.gift-img {
+    margin: 20px auto;
+    max-width: 400px;
+    height: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("images/gift-cover.jpg");
+    background-size: cover;
+}
+
+#gift-img-happy:hover {
+    background-image: url("images/excited.gif");
+}
+
+#gift-img-hot:hover {
+    background-image: url("images/ian-proud.gif");
+}
+#gift-img-genius{
+    height: 215px;
+}
+
+#gift-img-genius:hover {
+    background-image: url("images/iangenius.gif");
+    background-size: 99%;
+    background-position: center;
+    
+}
+
+#gift-img-badass:hover {
+    background-image: url("https://media.giphy.com/media/3o6Zt11R527fgtrIJO/giphy.gif");
+    background-size: 140%;
+    background-position: center ;
+}
+#gift-img-sign {
+    height: 200px;
+}
+#gift-img-sign:hover {
+    background-image: url("https://media.giphy.com/media/xWKE1ihlxBMIInMhBc/giphy.gif");
+    background-size: 100%;
+}
+
+#gift-img-cheers:hover {
+    background-image: url("images/cheers.gif");
+}
+
+#footer {
+    font-style: italic;
+    width: 400px;
+    margin: 40px auto 20px;
+}
+
+a {
+  background-image: linear-gradient(
+    to right,
+    blue,
+    blue 50%,
+    red 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+a:before {
+  content: '';
+  background: blue;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+ background-position: 0;
+}
+
+a:hover::before {
+  width:100%;
+}
+
+/* 
+Add the footer paragraph according to the design. 
+Configure the anchor tag to open the link in a new tab.
+Forgotten how to do it? Google it! 
+
+Link: 
+https://scrimba.com/learn/htmlandcss
+
+Text:
+Want to create your own Birthday GIFt site? Take this HTML & CSS course.
+*/
